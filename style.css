@@ -1,0 +1,1487 @@
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "SpoqaHanSansNeo-Regular" !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+}
+
+body,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header_wrap {
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  }
+  
+  .header_wrap > .header_top {
+  display: flex;
+  border-bottom: 1px solid #979797a9;
+  height: 142.5px;
+  background: #fff;
+  color: #000;
+  justify-content: space-between;
+  padding: 0 260px;
+  }
+  
+  .header_wrap > .header_top > .header_top_menu {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-grow: 1;
+  bottom: 0;
+  }
+  
+  .header_wrap > .header_top > .header_top_menu > ul > li {
+  padding: 10px 25px;
+  }
+  
+  .header_wrap > .header_top > .header_top_menu > ul > li a {
+    white-space: nowrap;
+  }
+  
+  .header_top_logo {
+  background-image: url(https://daejeontour.co.kr/web/resources/images/ci_on.png);
+  background-size: 210px 83px;
+  width: 210px;
+  height: 100%;
+  background-repeat: no-repeat;
+  margin-top: 2.625rem;
+  /*   padding: 2.625rem 0 0 0; */
+  }
+  
+  
+  /* 대전시창 바로가기 시작 */
+  
+  .header_wrap > .header_top > .top_menu_quick {
+  position: absolute;
+  right: 15%;
+  top: 25px;
+  }
+  
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > .dj_city_home{
+  background-image: url(https://daejeontour.co.kr/web/resources/images/cityhall_on.png);
+  background-size: 25px 23px;
+  width: 25px; height: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  }
+  
+  .dj_city_home > .hover_appear {
+    display: none;
+    position: absolute;
+    width: 80px; height: 60px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;line-height: 30px;
+    margin-top: 10px;
+    left: -27px;
+    border: 1px solid rgba(0, 0, 0, .2);
+  }
+  
+  
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > li {
+  line-height: 25px;
+  font-weight: 100;
+  color: #333;
+  }
+  
+  /* 검색창 */
+  
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > li > ul > .search_tab {
+  background-color: rgba(0, 0, 0);
+  }
+  
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > .search_tab > span > a {
+  position: absolute;
+  background-image: url(https://daejeontour.co.kr/web/resources/images/hd_srch_on.png);
+  background-size: 19px 20px;
+  width: 19px; height: 20px;
+  top: 0;
+  right: 5px;
+  }
+  
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > li > .glb_tab {
+  position: absolute;
+  background-image: url(	https://daejeontour.co.kr/web/resources/images/hd_lang_on.png);
+  background-size: 27px 27px;
+  width: 27px; height: 27px;
+  top: 0;
+  right: -40px;
+  transition: .3s;
+  }
+  
+  input {
+  font-size: 10px;
+  color: #222222;
+  width: 270px;
+  height: 30px;
+  border: none;
+  border-bottom: solid #000 1px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+  background: none;
+  z-index: 5;
+  }
+  
+  /* input::placeholder { color: #aaaaaa; } */
+  input:focus { outline: none; }
+  
+  .header_wrap > .header_top > .top_menu_section {
+  position:absolute;
+  top: 70px;
+  right: 50px;
+  }
+  
+  .header_wrap > .header_top > .top_menu_section > ul > li {
+  padding: 20px;
+  }
+  
+  /* 헤더 sns 아이콘 */
+  
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > li > ul {
+  display: flex;
+  }
+  
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > li > ul > .blog {
+  background-image: url(https://daejeontour.co.kr/web/resources/images/hdblog.png);
+  background-size: 20px 20px;
+  width: 32px; height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  background-color: rgba(0, 180, 0);
+  border-radius: 20px;
+  }
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > li > ul > .facebook {
+  background-image: url(	https://daejeontour.co.kr/web/resources/images/hdfb.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px 18px;
+  width: 31px; height: 31px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1675ec;
+  border-radius: 20px;
+  }
+  
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > li > ul > .instar {
+  border-radius: 20px;
+  width: 32px; height: 32px;
+  }
+  
+  
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > li > ul > .instar {
+  background-image: url(	https://daejeontour.co.kr/web/resources/images/hdinsta_bg.png);
+  border-radius: 20px;
+  width: 32px; height: 32px;
+  background-size: 32px 32px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  }
+  
+  
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > li > ul > .instar > .inst_2 {
+  background-image: url(https://daejeontour.co.kr/web/resources/images/hdinsta.png);
+  background-size: 20px 20px;
+  width: 32px; height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  }
+  
+  
+  .header_wrap > .header_top > .top_menu_quick > .quick_wrap > ul > li > ul > .youtube {
+  background-image: url(https://daejeontour.co.kr/web/resources/images/hdytb.png);
+  background-size: 20px 15px;
+  width: 32px; height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  background-color: #e72727;
+  border-radius: 20px;
+  }
+  
+  /* 대전시창 바로가기 끝 */
+  
+  /* 2차메뉴 창 시작 */
+  
+  /* 1차메뉴 꾸밈 시작 */
+  
+  .underline_1 {
+  line-height: 1.2;
+  font-size: 15px;
+  font-weight: 500;
+  background-image: linear-gradient(transparent calc(100% - 3px), #ffe500 3px);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s;
+  cursor: pointer;
+  }
+  @media (min-width: 1000px) {
+  .underline_1 {
+    font-size: 15px;
+  }
+  }
+  .underline_1.yellow {
+  background-image: linear-gradient(transparent 60%, #ffe500 40%);
+  }
+  .underline_1:hover {
+  background-size: 100% 100%;
+  }
+  
+  
+  /* 1차메뉴 꾸밈 끝 */
+  
+  .header_wrap > .header_top > .header_top_menu > ul div {
+  display: none;
+  }
+  
+  .header_wrap > .header_top > .header_top_menu > ul > li:hover div{
+  display: block;
+  animation: slideDown 0.5s ease-out;
+  z-index: -50;
+  }
+  
+  @keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  }
+  
+  .header_top_menu .fs-1375 > a {
+  font-size: 1.375rem;
+  margin-right: 30px;
+}
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+  .header_wrap > .header_top { position: relative;}
+  
+  .header_wrap > .header_top > .header_top_menu > ul > li > div {
+    width: 1920px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #fff;
+  background-image: url(https://daejeontour.co.kr/web/resources/images/back_illust.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  font-size: 13px;
+  color: #545454;
+  }
+  
+  /* 2차메뉴 커스텀 시작 */
+  
+  .header_top_menu > ul > li > a span::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 1px; height: 0px; background: #000;
+  top: 2rem; left: 50%; transition: .3s all;
+  z-index: 1;
+  }
+  
+  
+  
+  .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-700 {
+    margin-left: -30%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    }
+    
+    .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-700 > li {
+    padding: 10px 0;
+    }
+    
+    .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-600 {
+    margin-left: -12%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    }
+    
+    .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-600 > li {
+    padding: 10px 0;
+    }
+    
+    .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-500 {
+    margin-left: 110px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    }
+
+
+    .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-500 span{
+      color: #1D48B5;
+    }
+    
+    .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-500 > li {
+    padding: 10px 0;
+    }
+    
+    .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-400 {
+    margin-left: 450px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    }
+    
+    .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-400 > li {
+    padding: 10px 0;
+    }
+    
+    .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-300 {
+    margin-left: 820px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    }
+    
+    .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-300 > li {
+    padding: 10px 0;
+    }
+    
+    .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-200 {
+    margin-right: -1180px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    }
+    
+  
+  .header_wrap > .header_top > .header_top_menu > ul > li > div > .ma-200 > li {
+  padding: 10px 0;
+  }
+  
+  .header_top_menu .hbg_menu {
+  position: absolute;
+  bottom: 5px;
+  right: 10%;
+  }
+  
+  .header_top_menu .hbg_menu > .hbg_icon {
+  background-image: url(img/hbg_menu_btn\ 1.png);
+  display: block; /* a 태그가 블록 요소처럼 동작하도록 함 */
+  background-size: cover;
+  width: 21px;
+  height: 21px;
+  line-height: 60px;
+  margin-right: 30px;
+  }
+  
+  /* 퀵 전체메뉴 시작 */
+  
+  .header_top .hbg_menu_q {
+    display: none;
+    position: absolute;
+    right: 0;
+    }
+  
+    
+    .header_top .hbg_menu_q > .hbg_icon_q {
+    background-image: url(img/hbg_menu_btn\ 1.png);
+    display: block; /* a 태그가 블록 요소처럼 동작하도록 함 */
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    line-height: 50px;
+    margin-left: 70%;
+    }
+  
+    
+  /* 퀵 전체메뉴 끝 */
+  
+  /* 아코디언 메뉴 */
+    
+  #Accordion_wrap {
+    display: none;
+  }
+    
+  .que{
+    position: relative;
+    padding: 30px 0 0 0;
+    cursor: pointer;
+    font-size: 14px;
+    
+  }
+    
+  .que::before{
+    display: inline-block;
+    content: '';
+    font-size: 14px;
+    color: #006633;
+    margin: 0 5px;
+
+
+
+
+    
+  }
+
+
+  
+  
+  .que.on>span{
+    font-weight: bold;
+    color: #006633; 
+  }
+    
+  .anw {
+    display: none;
+      overflow: hidden;
+    font-size: 14px;
+    background-color: #f4f4f2;
+    padding: 27px 0;
+  }
+    
+  .anw::before {
+    display: inline-block;
+    content: 'A';
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin: 0 5px;
+  }
+  
+  .arrow-wrap {
+    position: absolute;
+    top:50%; right: 10px;
+    transform: translate(0, -50%);
+  }
+  
+  .que .arrow-top {
+    display: none;
+  }
+  .que .arrow-bottom {
+    display: block;
+  }
+  .que.on .arrow-bottom {
+    display: none;
+  }
+  .que.on .arrow-top {
+    display: block; 
+  }
+  
+  #menuOverlay {
+    position: fixed;
+    }
+    
+    .hbg_menu_btn {
+    display: none;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #fff;
+    padding: 8.125rem calc((100% - 1200px)/2) 0;
+    z-index: 500; /* 최상위에 위치 */
+    }
+    
+    .hbg_menu_btn {
+      font-family: "SpoqaHanSansNeo";
+    }
+    
+    .hbg_menu_btn > .flex_menu > .wall_menu_all > .wall_menu > ul > li > a {
+      font-family: "SpoqaHanSansNeo";
+    }
+    
+    .hbg_menu_btn.active {
+      display: block;
+    }
+    
+    .hbg_menu_btn .hbg_logo {
+      margin-right: 50px;
+    }
+    .hbg_menu_btn .hbg_logo img {
+      width: 310px; height: 85px;
+    }
+    
+    .wall_menu > ul div.flex {
+      padding: 0.625rem 0 2.875rem 12.5rem;  
+    }
+    
+    .wall_menu > ul div.flex li {
+      padding: 0 1.25rem;
+      line-height: -20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .wall_menu > ul div.flex li:hover {
+      border-radius: 10px;
+      background-color: #e4e4e454;
+    }
+    
+    .wall_menu a {
+      font-family: "SpoqaHanSansNeo";
+    
+    }
+    
+    .wall_menu .green_dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 10px;
+    background-color: #007946;
+    }
+    
+    .hbg_menu_btn .wall_menu .font_span {
+    font-size: 1.875rem;
+    color: #007946;
+    font-weight: 600;
+    padding: 0 0 0 1.125rem;
+    width: 200px;
+    }
+    
+    .hbg_menu_btn .wall_menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+    
+    
+    .hbg_menu_btn .wall_menu li {
+    width: auto;
+    height: 3.125rem;
+    /* overflow: hidden; */
+    float: left;
+    margin: 0 1rem 1rem 0;
+    box-sizing: border-box;
+    
+    }
+    
+    .hbg_menu_btn .wall_menu > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    padding: 0 1.25rem;
+    color: #000;
+    }
+    
+    .tab_all .more_view_btn {
+    position: absolute;
+    width: auto;
+    height: 50px;
+    box-sizing: border-box;
+    top: 1rem;
+    right: 0;
+    z-index: 1;
+    border: 1px solid #000;
+    border-radius: 28px 28px 0 28px;
+    transition: 0.3s;
+    }
+    
+    .hbg_menu_btn .close_btn {
+    padding: 100px;
+    width: 30px; height: 30px;
+    top: 0;
+    right: 0;
+    }
+    
+    .hbg_menu_btn .close_btn > div:first-child{
+    width: 30px; height: 3px;
+    background-color: #000;
+    rotate: 45deg;
+    }
+    .hbg_menu_btn .close_btn > div:last-child{
+      width: 30px; height: 3px;
+      background-color: #000;
+      margin-top: -2px;
+    rotate: -45deg;
+    }
+    
+  
+  /* 아코디언 메뉴 */
+  
+  /* 아코디언 메뉴창 시작 */
+  
+  .mo_language {
+    display: inline-block;
+      overflow: hidden;
+      border: 1px solid #555;
+      border-radius: 1.25rem;
+      z-index: 12;
+    }
+    
+    .mo_language h1 {
+      display: inline-block;
+      position: relative;
+      width: 7.25rem;
+      height: 2.1rem;
+      overflow: hidden;
+      font-size: 16px;
+      margin-left: 50px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+    
+    .mo_language a {
+    background-image: url(https://daejeontour.co.kr/web/resources/images/hd_lang_on.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 20px;
+      
+    }
+      
+    #Accordion_wrap {
+      width: 100%;
+      padding: 4.5rem 1rem 0 3.2rem;
+    }
+    
+    .allMenu .allwrap .alldepth1 > li > span a {
+      font-size: 1.625rem;
+    }
+  
+    .que{
+      position: relative;
+      padding: 35px 0;
+      cursor: pointer;
+    }
+      
+    .que::before{
+      display: inline-block;
+      content: '';
+      font-size: 14px;
+      color: #006633;
+      margin: 0 5px;
+    }
+    
+    .que::after{
+      display: inline-block;
+      content: url(https://daejeontour.co.kr/web/resources/images/moballarrow.png);
+      rotate: 180deg;
+      font-size: 14px;
+      color: #006633;
+      margin: 0 5px;
+      
+      position: absolute;
+      right: 1.875rem;
+      top: 50%;
+      transition: .3s;
+    }
+    
+    .que.on::after {
+      transform: translatey(-50%) rotate(180deg);
+    }
+    
+    .que > span {
+      font-size: 1.625rem;
+    }
+    
+    .que.on>span{
+      font-weight: bold;
+      color: #006633; 
+    }
+      
+    .anw {
+      display: none;
+        overflow: hidden;
+      font-size: 14px;
+      background-color: #f4f4f2;
+      padding: 27px 0;
+      text-align: left;
+    }
+    
+    .anw li {
+      padding: 5px 10px;
+      font-family: "SpoqaHanSansNeo-Regular";
+    }
+      
+    .anw::before {
+      display: inline-block;
+      content: '';
+      font-size: 14px;
+      font-weight: bold;
+      color: #666;
+      margin: 0 5px;
+    }
+    
+    #Accordion_wrap {
+      display: none; /* 기본적으로 숨김 */
+      position: fixed; /* 고정 위치 */
+      top: 0; /* 화면 상단 */
+      left: 0; /* 화면 왼쪽 */
+      width: 100vw; /* 화면 전체 너비 */
+      height: 100vh; /* 화면 전체 높이 */
+      overflow-y: auto; /* 세로 스크롤 허용 */
+      overflow-x: hidden; /* 가로 스크롤 비활성화 */
+      background: #ffffff; /* 배경색 (원하는 대로 변경 가능) */
+      z-index: 9999; /* 다른 요소 위에 오도록 설정 */
+  }
+  
+  #Accordion_wrap > .close_btn_1 {
+    padding: 50px 50px;
+    top: 0;
+    right: 0;
+    }
+    
+    #Accordion_wrap > .close_btn_1 > div:first-child{
+    width: 30px; height: 3px;
+    background-color: #000;
+    rotate: 45deg;
+    border-radius: 5px;
+  }
+  #Accordion_wrap > .close_btn_1 > div:last-child{
+    width: 30px; height: 3px;
+    background-color: #000;
+    margin-top: -2px;
+    rotate: -45deg;
+    border-radius: 5px;
+    }
+  
+  /* 아코디언 메뉴창 끝 */
+  
+  
+  .right-button-1 {
+  
+  top: 0;
+  right: 0;
+  }
+  .right-button-1 a {
+  position: absolute;
+  background-color: #fff;
+  padding: 0px 30px 0px 30px;
+  border: 1px solid #000;
+  border-radius: 28px 28px 0 28px;
+  box-sizing: border-box;
+  transition: 0.2s all;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  line-height: 48px;
+  top: -5%;
+  
+  }
+  
+  .right-button-1 > a > span {
+  font-size: 16px;
+  }
+  .right-button-1 a:hover {
+  border: none;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.05),
+  0 -4px 3px rgba(0, 0, 0, 0.05),
+  4px 0 3px rgba(0, 0, 0, 0.05),
+  -4px 0 3px rgba(0, 0, 0, 0.05);
+  }
+  .right-button-1 span {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  flex-direction: row;
+  white-space: nowrap;
+  margin-right: 8px;
+  }
+  .right-button-1 img {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  }
+  
+.mainBg{
+  position: relative;
+  top: 130px;
+}
+.widget1{
+ 
+}
+
+.widget1-1{
+  position: absolute;
+  top: 7.8%;
+  right: 16%;
+  color: white;
+  display: flex;
+  text-align: center;
+  width: 130px; height: 35px;
+  background-color: #464b5799;
+  padding: 0px 11px;
+  border-radius: 10px 10px 0px 0px;
+}
+.widget1-1 .widget1-txt{
+  text-align: center;
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  font-size: 16px;
+}
+.wtherview {
+ width: 130px; height: 60px;
+ background-color: #464b5799;
+ border-radius: 0px 0px 10px 10px;
+ position: absolute;
+ top: 14.2%;
+ right: 16%;
+}
+#wth img{
+  width: 48px; height: 43px;
+  position: relative;
+  top: 8px; left: 15px;
+}
+#tmp{
+  display: flex;
+  position: relative;
+}
+.tmp-txt{
+  color: #ffe500;
+  font-size: 26px;
+  font-weight: 500;
+  position: absolute;
+  top: -30px;
+  left: 65px;
+}
+#tmp img{
+  width: 13px; height: 13px;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+.wthertxt{
+  width: 130px; height: 35px;
+  background-color: #464b5799;
+  border-radius: 10px 10px 0px 0px;
+  position: absolute;
+  top: 27%;
+  right: 16%;
+  text-align: center;
+}
+.wthertxt span {
+  display: flex;
+  position: relative;
+  top: 7px; left: 25px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.traval_img{
+  width: 37px; height: 34px;
+  position: relative;
+  top: 10px;
+  left: 43px;
+}
+.traval_img img{
+
+}
+.wtherview-2{
+  width: 130px; height: 60px;
+  background-color: #464b5799;
+  border-radius: 0px 0px 10px 10px;
+  position: absolute;
+  top: 33.4%;
+  right: 16%;
+}
+.mainBg .main_txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 120%);
+  text-align: center;
+  display: block;
+  color: white;
+}
+
+.mainBg .main_txt .title {
+  font-size: 28px;
+  display: block;
+}
+.mainBg .main_txt strong {
+  font-size: 55px;
+  display: block;
+}
+.navWrap {
+  width: 1920px;
+  height: 55px;
+  /* border: 1px solid black; */
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  width: 940px;
+  height: 55px;
+  margin: auto;
+  /* border: 1px solid red; */
+  position: relative;
+  top: 140px;
+  display: flex;
+}
+.nav-list {
+  text-align: left;
+}
+.icon-box {
+  text-align: right;
+}
+.nav > ul {
+  display: flex;
+  position: absolute;
+  top: 15px;
+}
+.nav > ul > li {
+  padding-right: 5px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+.nav > ul > li::after{
+  content: "";
+    width: 4px;
+    height: 13px;
+    background: url(https://daejeontour.co.kr/web/resources/images/svg/navarrw.svg) no-repeat center;
+    transform: translateY(-50%);
+    top: 56%;
+    right: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.nav > ul > li:last-child::after {
+  content: none; /* 마지막 항목에 화살표 제거 */
+}
+.nav > ul img {
+  width: 16px;
+  height: 20px;
+}
+
+.icon-box ul {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.icon-box ul > li {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.arrow {
+  width: 4px;
+  height: 13px;
+  margin-right: 15px;
+}
+.icon-box ul > li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.icon-box ul img {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+/* ---gried-container---- */
+
+.temamonth {
+  position: absolute;
+  width: 80px;
+  height: 2.5rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-width: 0 1px 1px;
+  border-radius: 0 0 2.5rem 2.5rem;
+  transform: translateX(-50%);
+  top: 0;
+  left: 50%;
+}
+.temamonth span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #3575d6;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.grid-container {
+  width: 940px;
+  height: 1466;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  display: grid;
+  
+ text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding-top: 150px;
+  margin-bottom: 200px;
+}
+
+.item {
+  /* position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease; */
+
+
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-width: 0 1px 1px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+.item:hover{
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.1);
+}
+.text-overlay {
+  padding: 16px 18px 16px 8px;
+  width: 300px;
+  height: 83px;
+  position: relative;
+}
+h3 {
+  line-height: 1;
+  font-size: 18px;
+  margin: 0 0 1rem;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: left;
+}
+.text-overlay img {
+  width: 16px;
+  height: 16px;
+}
+.text-overlay p {
+  font-size: 14px;
+}
+.text-overlay .clock {
+  position: absolute;
+  left: 6px;
+  top: 48px;
+}
+.text-overlay .date {
+  position: absolute;
+  left: 30px;
+  top: 45px;
+  color: #666666;
+}
+.text-overlay .eyes {
+  position: absolute;
+  top: 47px;
+  right: 55px;
+}
+.text-overlay .span2 {
+  position: absolute;
+  top: 45px;
+  right: 15px;
+  color: #666666;
+}
+
+.topBtn{
+  z-index: 9999;
+  position: fixed;
+  top: 630px;
+  right: 300px;
+  width: 56px; height: 56px;
+  cursor: pointer;
+  background-color: #f1f1f9;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .25);
+  border-radius: 2rem;
+  transition: .3s all;
+  opacity: 0;         /* 기본적으로 숨김 */
+  pointer-events: none; /* 클릭 불가능 */
+}
+.topBtn img{
+ margin-right: 20px;
+}
+.topBtn.show {
+  opacity: 1;         /* 스크롤 위치에 따라 나타남 */
+  pointer-events: auto; /* 클릭 가능 */
+}
+.topBtn img{
+  background-size: 1rem 1.625rem;
+  width: 18px; height: 28px;
+  margin-left: 17px;
+  margin-top: 15px;
+}
+
+
+ 
+  /* ---- footer ---- */
+
+  footer{
+    width: 1200px; height: 267px;
+    /* border: 1px solid black; */
+    padding: 47px 0px 0px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  footer .ft-top {
+    width: 1200px; height: 56px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    display: flex;
+  }
+  footer .ft-top .ft-top-1{
+    width: 896px; height: 100%;
+    background-color: #3942af;;
+  }
+  .ft-top-1 ul{
+    width: 682px; height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ft-top-1 ul>li{
+    height: 100%;
+    font-size: 16px;
+    margin-right: 25px;
+    letter-spacing: -1px;
+  }
+  .ft-top-1 ul>li:first-child{
+    margin-left: 20px;
+  }
+  .ft-top-1 ul>li>a{
+    display: block; height: 100%;
+    color: white;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  footer .ft-top .ft-top-2{
+    width: 304px; height: 100%;
+    background-color: #2D348FF2;
+  }
+  .ft-top-2 .ft-top-2-btn{
+    width: 256px; height: 100%;
+    margin: auto;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    background: transparent;
+    position: relative;
+  }
+  .ft-top-2 .ft-top-2-btn p{
+    color: white;
+    font-size: 13.5px;
+    text-align: left;
+  }
+  .ft-top-2-btn-box{
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+  }
+  .ft-top-2 .ft-top-2-btn-box img {
+    width: 11px; height: 6px;
+    position: absolute;
+    right: 0%;
+  }
+
+ /* hidden button */
+
+
+
+ #related-sites {
+  position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 304px; 
+    height: 398px;
+    background-color: #2d348ff2;
+    padding: 0px 24px;
+    z-index: 10;
+  display: none; 
+}
+#related-sites .button{
+  width: 256px; height: 56px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed white;
+  white-space: nowrap;
+}
+
+#related-sites .button .button1{
+  margin-left: 60%;
+  padding-top: 15px;
+}
+
+#related-sites .button span {
+  color: white;
+  font-size: 13px;
+}
+
+#related-sites ul {
+  margin:0;
+  padding-top: 15px;
+  padding-bottom: 13px;    
+}
+
+#related-sites ul li {
+  padding-bottom: 18px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+}
+#related-sites>ul>li>a{
+  
+}
+#related-sites>ul>li .button2{
+  padding-top: 2px;
+  margin-right: 8px;
+}
+
+  .ft-center{
+    width: 1200px; height: 80px;
+    /* border: 1px solid orange; */
+    position: absolute;
+    top: 56px;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+ .ft-center .ft-center-1{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+ }
+ .ft-center .ft-center-1 span{
+    font-size: 22px;
+    margin-right: 8px;
+    margin-left: 7px;
+    font-weight: 400;
+ }
+ .ft-center .ft-center-1 strong{
+    color: #3942af;
+    font-size: 32px;
+    margin-right: 20px;
+ }
+ .ft-center .ft-center-1 p {
+    font-size: 16px;
+    color: #828282;
+    font-weight: 100;
+ }
+ .ft-center-2 {
+   width: 342px; height: 80px;
+   display: flex;
+   align-items: center;
+   white-space: nowrap;
+ }
+
+ .ft-center .ft-center-2 p {
+    position: absolute;
+    left: 66%;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+ }
+.ft-center .ft-bottom {
+    width: 1161px; height: 124px;
+    /* border: 1px solid green; */
+    position: absolute;
+    top: 80px;
+    display: flex;
+}
+.ft-center .ft-bottom ul {
+    display: flex;
+    height: 74px;
+    align-items: center;
+}
+.ft-center .ft-bottom ul>li{
+    margin-right: 8px;
+    padding-left: 8px;
+   color: #828282;
+   font-weight: 200;
+}
+.ft-center .ft-bottom ul > li{
+  border-right: 1px solid #c4c4c4;
+  padding-right: 8px;
+  margin-right: 10px;
+  height: auto;
+  line-height: 12px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.ft-center .ft-bottom ul > li:last-child{
+  border: none;
+  margin-left: -10px;
+}
+
+/* .ft-bottom .ft-bottom>ul>li:nth-child(1)::after{
+  content: "";
+  display: inline-block;
+  width: 1px; height: 3px;
+  background-color: #828282;
+  position: relative;
+  top: 2px; margin-left: 3px;
+} */
+
+.ft-center .ft-bottom .copyright{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ft-bottom .copyright p {
+ margin-top: -50px;
+ margin-left: 285px;
+ white-space: nowrap;
+ color: #7f7f7f;
+ font-size: 16px;
+ font-weight: 200;
+}
+
+
+
+/* 회전 애니메이션 정의 */
+
+#related-sites {
+  display: none; /* 초기 상태는 숨김 */
+  cursor: pointer;
+}
+
+#related-sites.show {
+  display: block; /* .show 클래스가 추가되면 표시됨 */
+}
+.rotate {
+  transition: transform 0.3s ease;
+}
+
+.rotate.down {
+  transform: rotate(180deg); 
+}
+
+.rotate.up {
+  transform: rotate(0deg); 
+}
+
+/* 버튼 스타일 */
+#related-sites {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+strong b {
+  /* display: inline-block; */
+    position: relative;
+    font-size: 2.2rem;
+    z-index: 0;
+  }
+  
+  .underline_2 {
+  /* line-height: 20px; */
+  font-size: 2.2rem;
+  font-weight: 700;
+  background-image: linear-gradient(transparent calc(100% - 3px), #ffe500 3px);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: background-size 0.3s;
+  cursor: pointer;
+  }
+  .underline_2.yellow {
+  background-image: linear-gradient(transparent 60%, #ffe500 40%);
+  border-radius: 12px 12px 0 0;
+  }
+  
+  .underline_3 {
+  line-height: 1.2;
+  font-size: 1.7rem;
+  font-weight: 700;
+  background-image: linear-gradient(transparent calc(100% - 3px), #ffe500 3px);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: background-size 0.3s;
+  cursor: pointer;
+  }
+  .underline_3.yellow {
+  background-image: linear-gradient(transparent 60%, #ffe500 40%);
+  }
+
+
+
+  .fs-1375 > a {
+    position: relative;
+    font-size: 1.375rem;
+    margin-right: 30px;
+    margin-top: -30px;
+  }
+  
+  .fs-1375 > a::after {
+    content: "";
+    position: absolute;
+    width: 1px; /* 선 두께 */
+    height: 25px; /* 선 높이 */
+    background-color: #000000; /* 선 색상 */
+    top: 107%; /* 글자 아래 위치 */
+    left: 50%; /* 가운데 정렬 */
+    transform: translate(-50%, 0) scaleY(0); /* 초기 상태: 보이지 않음 */
+    transition: transform 0.3s ease; /* 애니메이션 효과 */
+    z-index: 1; /* 선이 보이도록 z-index 설정 */
+  }
+  
+  /* 1차 메뉴 항목 호버 시 선이 나타나도록 */
+  .header_wrap > .header_top > .header_top_menu > ul > li:hover > a::after {
+    transform: translate(-50%, 0) scaleY(1); /* 호버 시 선이 나타남 */
+  }
+  
+  .fs-1375 .yellow3{
+    background-color: #ffe500; /* 노란색 배경 */
+    padding: 0.1rem 0.5rem; /* 텍스트와 배경 사이의 여백 설정 */
+    width: 110%; /* 너비를 110%로 늘려 텍스트보다 약간 넓게 설정 */
+    height: 0.8rem; /* 높이를 줄여 얇게 표시 */
+    position: relative;
+    z-index: 0; /* 배경이 다른 요소에 가려지지 않도록 설정 */
+  }
+
+
+
